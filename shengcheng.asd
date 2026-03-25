@@ -3,17 +3,17 @@
   :author "Lihui Zhang"
   :mailto "zlihui486@gmail.com"
   :license "MIT"
+  :homepage "https://github.com/raynei86/shengcheng"
   :depends-on ("cl-markless"
-               "clack"
+	       "cl-markless-plump"
+	       "clack"
                "lass"
 	       "spinneret"
-	       "cl-markless-plump"
-	       "alexandria"
 	       "str")
   :components ((:module "src"
                 :components
                 ((:file "main"))))
-  :description "My personal static site generator"
+  :description "A Static Site Generator that tries to do everything in Common Lisp"
   :in-order-to ((test-op (test-op "shengcheng/tests"))))
 
 (defsystem "shengcheng/tests"
